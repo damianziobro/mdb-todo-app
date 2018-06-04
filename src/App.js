@@ -12,12 +12,19 @@ class App extends Component {
   };
 
   handleAddBtnClick = (event) => {
+    const todos = [...this.state.todos];
+    todos.push(`Task number ${todos.length + 1}`);
+    this.setState({ todos });
   };
 
   handleRemoveBtnClick = (event) => {
+    const todos = [...this.state.todos];
+    todos.splice(-1, 1);
+    this.setState({ todos });
   };
 
   handlClearBtnClick = (event) => {
+    this.setState({ todos: [] });
   };
 
   render() {
