@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './ControlButton.css';
+
 function ControlButton({ label, click }) {
     return (
-        <button type="button" onClick={click}>
+        <button className="control-button" type="button" onClick={click}>
             {label}
         </button>
     );

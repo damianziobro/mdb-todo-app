@@ -1,0 +1,12 @@
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+    .control-buttons {
+        flex-direction: column;
+    }
+}

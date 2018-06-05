@@ -31,7 +31,7 @@ class App extends Component {
     const { todos } = this.state;
 
     return (
-      <div className="App">
+      <div className="app">
         <ControlButtons
           onAddBtnClick={this.handleAddBtnClick}
           onRemoveBtnClick={this.handleRemoveBtnClick}
