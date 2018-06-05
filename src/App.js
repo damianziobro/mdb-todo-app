@@ -13,7 +13,11 @@ class App extends Component {
 
   handleAddBtnClick = (event) => {
     const todos = [...this.state.todos];
-    todos.push(`Task number ${todos.length + 1}`);
+    const todoNumber = todos.length + 1;
+    todos.push({
+      body: `Task number ${todoNumber}`,
+      id: todoNumber
+    });
     this.setState({ todos });
   };
 
